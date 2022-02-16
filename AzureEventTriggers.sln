@@ -1,0 +1,25 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.31424.327
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AzureEventTriggers", "AzureEventTriggers\AzureEventTriggers.csproj", "{88F0ACD4-A1E8-4882-A86B-45F208E31B07}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{88F0ACD4-A1E8-4882-A86B-45F208E31B07}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{88F0ACD4-A1E8-4882-A86B-45F208E31B07}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{88F0ACD4-A1E8-4882-A86B-45F208E31B07}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{88F0ACD4-A1E8-4882-A86B-45F208E31B07}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {9E376BB9-8687-4F24-840F-96A27DFF196A}
+	EndGlobalSection
+EndGlobal
