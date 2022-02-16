@@ -21,9 +21,10 @@
 |FileName|Description|
 |:----|:----|
 |43EFE991E8614CFB9EDECF1B0FDED37A.json| **Upload File and create batches **|
-|43EFE991E8614CFB9EDECF1B0FDED37B.json| *Upload Files and Store in Azure  Table**|
-|43EFE991E8614CFB9EDECF1B0FDED37C.json| **Process the batched files and store in Azure Table.|
+|43EFE991E8614CFB9EDECF1B0FDED37B.json| **Upload Files and Store in Azure  Table**|
+|43EFE991E8614CFB9EDECF1B0FDED37C.json| **Process the batched files and store in Azure Table**|
 |43EFE991E8614CFB9EDECF1B0FDED37D.json| **Search** NoSQL DB for ingested records|
+|43EFE991E8614CFB9EDECF1B0FDED37E.json| **Copy Files from FileShare to Pickup Blob Container**|
 
 ## Upload Configuration to Storage
 Go to created storage Account.. Click On "Blob Service" 
