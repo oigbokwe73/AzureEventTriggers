@@ -8,23 +8,21 @@ using Xenhey.BPM.Core.Implementation;
 using Xenhey.BPM.Core;
 using System.Collections.Specialized;
 using System.Linq;
-using System.IO;
 
 namespace AzureEventTriggers
 {
-    public class Search
+    public class UploadFile
     {
         private HttpRequest _req;
         private NameValueCollection nvc = new NameValueCollection();
-        [FunctionName("search")]
+        [FunctionName("uploadfile")]
         public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = null)]
             HttpRequest req, ILogger log)
         {
             _req = req;
 
             log.LogInformation("C# HTTP trigger function processed a request.");
-            string requestBody = await new StreamReader(_req.Body).ReadToEndAsync();
-            var results = orchrestatorService.Run(requestBody);
+            var results = orchrestatorService.Run(_req.Body);
             return resultSet(results);
 
         }
@@ -49,6 +47,5 @@ namespace AzureEventTriggers
                 return new ManagedOrchestratorService(nvc);
             }
         }
-
     }
 }
