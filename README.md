@@ -1,7 +1,7 @@
 # Azure Event Triggers
 
 
-> **Note:**  Install Azure Conteiner Instance to b used for SFTP
+> **Note:**  Install Azure Container Instance to be used for SFTP
 
 https://docs.microsoft.com/en-us/samples/azure-samples/sftp-creation-template/sftp-on-azure
 
