@@ -1,3 +1,4 @@
+using System.IO;
 using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Azure.WebJobs;
@@ -9,20 +10,21 @@ using Xenhey.BPM.Core;
 using System.Collections.Specialized;
 using System.Linq;
 
-namespace AzureServiceBusToSQL
+namespace AzureEventTriggers
 {
-    public class UploadFile
+    public class message
     {
         private HttpRequest _req;
         private NameValueCollection nvc = new NameValueCollection();
-        [FunctionName("uploadfile")]
+        [FunctionName("message")]
         public async Task<IActionResult> Run([HttpTrigger(AuthorizationLevel.Anonymous, "post", Route = null)]
             HttpRequest req, ILogger log)
         {
             _req = req;
 
             log.LogInformation("C# HTTP trigger function processed a request.");
-            var results = orchrestatorService.Run(_req.Body);
+            string requestBody = await new StreamReader(_req.Body).ReadToEndAsync();
+            var results = orchrestatorService.Run(requestBody);
             return resultSet(results);
 
         }
@@ -47,5 +49,6 @@ namespace AzureServiceBusToSQL
                 return new ManagedOrchestratorService(nvc);
             }
         }
+
     }
 }

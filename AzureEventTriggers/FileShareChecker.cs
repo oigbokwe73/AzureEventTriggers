@@ -18,7 +18,7 @@ namespace AzureEventTriggers
             log.LogInformation("C# HTTP trigger function processed a request.");
             string ApiKeyName = "x-api-key";
             //Ge file and update database information.
-            nvc.Add(ApiKeyName, "43EFE991E8614CFB9EDECF1B0FDED37B");
+            nvc.Add(ApiKeyName, "43EFE991E8614CFB9EDECF1B0FDED37E");
             string requestBody = "{\"ProcessStarted\" : \"Yes\" }";
             var uploadFile = orchrestatorService.Run(requestBody);
             log.LogInformation(uploadFile);
