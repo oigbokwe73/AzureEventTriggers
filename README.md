@@ -1,5 +1,8 @@
 # Azure Event Triggers
 
+Session Recording
+
+https://meetings.dialpad.com/getmp4/49d41b458f8511ecbb6e5fb0b183bb6e.mp4?amp_device_id=CI3O9y4s6k53rNaBj6DzK0
 
 > **Note:**  Install Azure Container Instance to be used for SFTP
 
